@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.19.1/libexec/bin/yarn.js add expo-linear-gradient@~8.1.0
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.19.1/libexec/bin/yarn.js add @react-native-community/masked-view
 
 PATH: 
   /Users/linnrnd/.composer/vendor/bin:/Applications/MAMP/bin/php/php7.3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/linnrnd/Library/Android/sdk/emulator:/Users/linnrnd/Library/Android/sdk/tools:/Users/linnrnd/Library/Android/sdk/tools/bin:/Users/linnrnd/Library/Android/sdk/platform-tools:/Users/linnrnd/Android/Sdk/emulator:/Users/linnrnd/Android/Sdk/tools:/Users/linnrnd/Android/Sdk/tools/bin:/Users/linnrnd/Android/Sdk/platform-tools:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
@@ -14,8 +14,16 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz: unexpected end of file
-      at Zlib.zlibOnError [as onerror] (zlib.js:170:17)
+  Error: https://registry.yarnpkg.com/jsc-android/-/jsc-android-245459.0.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:141191:19)
+      at Object.onceWrapper (events.js:298:28)
+      at ClientRequest.emit (events.js:209:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:690:9)
+      at Object.onceWrapper (events.js:298:28)
+      at TLSSocket.emit (events.js:209:13)
+      at TLSSocket.Socket._onTimeout (net.js:468:8)
+      at listOnTimeout (internal/timers.js:531:17)
+      at processTimers (internal/timers.js:475:7)
 
 npm manifest: 
   {
@@ -33,6 +41,9 @@ npm manifest:
       "react": "~16.9.0",
       "react-dom": "~16.9.0",
       "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+      "react-native-gesture-handler": "^1.6.1",
+      "react-native-safe-area-context": "^0.7.3",
+      "react-native-screens": "^2.5.0",
       "react-native-web": "~0.11.7",
       "react-navigation": "^4.3.7",
       "react-navigation-stack": "^2.3.12"

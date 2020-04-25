@@ -7,7 +7,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -22,8 +22,8 @@
       "**/*"
     ],
     "android": {
-      "package": "com.linnitsolution.yourappname",
-      "versionCode": 1
+      "package": "com.linnitsolution.countapp",
+      "versionCode": 2
     },
     "ios": {
       "supportsTablet": true
